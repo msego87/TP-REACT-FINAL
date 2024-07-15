@@ -13,28 +13,31 @@ const Header = () => {
     <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
         {user ? (
-            <>
-              <Navbar.Brand> <h4>Home</h4> </Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">                
-                </Nav>
-                <Nav>
-                  <Logout />
-                </Nav>
+          <>
+            <Navbar.Brand> <h4>Home</h4> </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Navbar.Collapse className="justify-content-center">
+                <Navbar.Text>
+                  Logueado como: <a>{user}</a>
+                </Navbar.Text>
               </Navbar.Collapse>
-            </>
-          ) : (
-            <>
-              <Navbar.Brand href='/login'>Login</Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
-                  <Nav.Link href="/register">Registrar</Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
-            </>
-          )
+              <Nav className='navbar-logout'>
+                <Logout />
+              </Nav>
+            </Navbar.Collapse>
+          </>
+        ) : (
+          <>
+            <Navbar.Brand href='/login'>Login</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="/register">Registrar</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </>
+        )
         }
       </Container>
     </Navbar>
