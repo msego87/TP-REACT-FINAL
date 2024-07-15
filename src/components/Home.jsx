@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { useContext } from 'react';
 import { UserContext } from '../context/UserContext';
+import './Home.css';
 
 
 const Home = () => {
@@ -24,9 +25,9 @@ const Home = () => {
     
   return (
     <>
-        <section className='container home-section' >
+        <section className='container' >
             <h4 className="my-4">Bienvenido {user}</h4>
-            <Row xs={1} lg={2} xl={3}  className="g-4">
+            <Row xs={1} lg={2} xl={3}  className="g-4 products-container" >
             {
                 products.map((product) => (
                 <Col key={product.sku}>

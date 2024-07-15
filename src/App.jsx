@@ -6,7 +6,6 @@ import { UserContext } from './context/UserContext';
 import { useContext, useEffect } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
-import Welcome from './components/Welcome';
 
 function App() {
 
@@ -22,7 +21,7 @@ function App() {
   return (
     <>
       <Header/>
-      <Outlet></Outlet>  
+      <Outlet></Outlet>
     </>
   )
 }
