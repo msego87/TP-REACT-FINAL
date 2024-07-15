@@ -24,8 +24,8 @@ const Home = () => {
     
   return (
     <>
-        <section className='container mt-4'>
-            <h4>Bienvenido {user}</h4>
+        <section className='container home-section' >
+            <h4 className="my-4">Bienvenido {user}</h4>
             <Row xs={1} lg={2} xl={3}  className="g-4">
             {
                 products.map((product) => (

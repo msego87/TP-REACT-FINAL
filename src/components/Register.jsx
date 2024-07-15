@@ -50,7 +50,7 @@ const Register = () => {
   return (
     <Container >
       <Col className='my-5'>
-        <Card className='text-center mx-auto' style={{ width: '30rem' }}>
+        <Card bg="dark" data-bs-theme="dark" className='text-center mx-auto' style={{ width: '30rem' }}>
           <Card.Header as="h3">
             Registrarse
           </Card.Header>

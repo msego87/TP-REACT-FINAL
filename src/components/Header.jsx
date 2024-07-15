@@ -10,7 +10,7 @@ const Header = () => {
   const { user } = useContext(UserContext);
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
         {user ? (
             <>

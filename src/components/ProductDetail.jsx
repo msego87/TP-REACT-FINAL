@@ -10,8 +10,7 @@ const ProductDetail = () => {
 
     const { productId } = useParams();
     const product = getProduct(Number(productId));
-    const navigate = useNavigate()
-    console.log(product);
+    const navigate = useNavigate();
     return (
         <>
             <Container>
@@ -29,8 +28,8 @@ const ProductDetail = () => {
                                 </Button>
                             </div>
                         </Card.Body>
-                        <Card.Footer>
-                            <h5>${product.price}</h5>
+                        <Card.Footer className='text-end py-0'>
+                            <h4>${product.price}</h4>
                         </Card.Footer>
                     </Card>
                 </Row>
