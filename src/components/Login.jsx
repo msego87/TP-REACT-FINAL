@@ -38,7 +38,7 @@ const Login = () => {
         <Col className='my-5'>
           <Card bg="dark" data-bs-theme="dark" className='text-center mx-auto' style={{ width: '30rem' }}>
             <Card.Header as="h3">
-              Login
+              Logueate
             </Card.Header>
             <Card.Body>
               <Form className='mb-3' onSubmit={handleSubmit} action=''>
